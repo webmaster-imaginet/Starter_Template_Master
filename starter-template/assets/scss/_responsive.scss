@@ -1,0 +1,43 @@
+// main: style.scss
+
+@media only screen and (max-width: 1200px) {
+  
+} /* end of (max-width: 1200px) */
+/****************************************************************************************************************/
+@media only screen and (max-width: 990px) {
+
+}/* end of (max-width: 990px) */
+/****************************************************************************************************************/
+@media only screen and (max-width: 768px) {
+    .mobile_menu_button {
+        display: block;
+    }
+    .wrap_main_menu {
+        display: none;
+    }
+    body.admin-bar .off-canvas {
+        top: 46px;
+    }
+} /* end of (max-width: 768px) */
+/****************************************************************************************************************/
+
+@media only screen and (max-width: 640px) {
+} /* end of (max-width: 640px) */
+/****************************************************************************************************************/
+
+@media only screen and (max-width: 480px) {
+
+.page-template-accessibility{
+    .main-container{
+        padding: 40px 15px;
+    }
+	h2{
+		font-size: 1.2rem;
+	}
+}
+} /* end of (max-width: 480px) */
+/****************************************************************************************************************/
+
+@media only screen and (max-width: 320px) {
+} /* end of (max-width: 320px) */
+/****************************************************************************************************************/
