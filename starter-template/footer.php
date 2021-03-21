@@ -1,7 +1,17 @@
 					<!-- footer -->
 					<footer class="footer" role="contentinfo">
 						<div class="container">
-							<div class="credit">Site by <a href="http://imaginet.co.il" target="_blank">Imaginet</a></div>
+							<div class="rights-credit">
+							    <div class="rights">
+								 <?php the_field('rights_text', 'option'); ?>
+							    </div>
+							    <div class="credit-accessibility">
+								<div class="credit">Site by <a href="http://imaginet.co.il" target="_blank">Imaginet</a></div>
+								 <a class="accessibility" href="<?php the_field('accessibility_link', 'option'); ?>" target="_blank">
+ 								    <?php the_field('accessibility_text', 'option'); ?>
+ 								 </a>
+							   </div>
+							</div>
 						</div>
 					</footer>
 					<!-- /footer -->
