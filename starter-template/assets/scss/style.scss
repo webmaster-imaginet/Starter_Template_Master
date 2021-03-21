@@ -264,6 +264,10 @@ ul#main-menu ul.sub-menu li:hover>a {
 /****** General ******/
 .page-template-accessibility{
     direction: rtl;
+     a.accessibility {
+     margin-top: 5px;
+     display: block;
+   }
     .main-container{
         padding: 70px 15px;
     }
