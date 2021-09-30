@@ -21,8 +21,7 @@
 
 				<?php if(is_rtl()){ $pos_dir = 'right'; }else{ $pos_dir = 'left'; } ?>
 				<div class="off-canvas position-<?php echo $pos_dir;?>" id="offCanvas" data-off-canvas>
-					<div class="mobile_menu_holder">
-						<div class="mobile_menu_title"><?php _e('Menu','imaginet'); ?></div>
+					<div class="mobile_menu_holder">						
 							<?php wp_nav_menu(
 									array(
 										'theme_location' => 'mobile-menu',
