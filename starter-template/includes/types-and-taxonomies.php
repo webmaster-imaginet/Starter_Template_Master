@@ -1,24 +1,22 @@
-<?php
 add_action('init', function () {
-    register_post_type('examples', array(
+    register_post_type('testimonials', array(
         'labels' => array(
-            'name' => __('Example'),
-            'singular_name' => __('example')
+            'name' => __('Testimonials'),
+            'singular_name' => __('Testimonial')
         ),
         'public' => true,
         'has_archive' => true,
-        'rewrite' => array('slug' => 'example'),
+        'rewrite' => array('slug' => 'testimonials'),
         'supports' => array('thumbnail', 'editor', 'title')
     ));
-    register_taxonomy(
-        'exmaple-tax',
-        array('examples'),        //post type name
-        array(
-            'hierarchical' => true,
-            'label' => 'example tax',  //Display name
-            'public' => true,
-            'rewrite' => array('slug' => 'test-slug'),
-            'show_ui' => true
-        )
-    );
+    register_post_type('news', array(
+        'labels' => array(
+            'name' => __('News'),
+            'singular_name' => __('News')
+        ),
+        'public' => true,
+        'has_archive' => true,
+        'rewrite' => array('slug' => 'news'),
+        'supports' => array('thumbnail', 'editor', 'title')
+    ));
 });
