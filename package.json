@@ -45,7 +45,7 @@
 		"zip-lib": "^0.5.0"
 	},
 	"dependencies": {
-		"bootstrap": "<5",
+		"bootstrap": "^5.2.3",
 		"jquery": "<4"
 	}
 }
