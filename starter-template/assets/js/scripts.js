@@ -10,6 +10,11 @@ $(function () {
         'top': 0,
         'padding-top': headerHeight
     });
+        $('img').each(function () {
+        var $img = $(this);
+        var filename = $img.attr('alt')
+        $img.attr('title', filename);
+    });
     // mobile menu style
         $('.mobile_menu_button .triggerMobileMenu').click(function () {
         $(this).toggleClass('open');
