@@ -98,6 +98,7 @@ a:focus {
 
 img {
     max-width: 100%;
+    height: auto;
 }
 
 img.grayscale {
@@ -177,6 +178,7 @@ ul#main-menu {
     display: -ms-flexbox;
     display: -webkit-flex;
     flex-direction: row;
+    list-style: none;
 }
 
 ul#main-menu>li {
@@ -237,9 +239,6 @@ ul#main-menu ul.sub-menu li a {
     -ms-flex-pack: space-between;
     padding: 10px;
     color: $primary-color;
-    border-right: 1px solid $primary-color;
-    border-left: 1px solid $primary-color;
-    border-bottom: 1px solid #a1a1a1;
     margin-right: 2px;
     margin-left: 2px;
 }
