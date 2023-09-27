@@ -254,6 +254,26 @@ ul#main-menu ul.sub-menu li:hover>a {
 }
 
 /****** General ******/
+.bold{
+    font-weight: bold;
+}
+.center{
+    text-align: center;
+}
+.white{
+    .color: #fff;
+}
+.full-absolute{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.bg-image{
+    background-position: center;
+    background-size: cover;
+}
 .page-template-accessibility{
     direction: rtl;
      a.accessibility {
