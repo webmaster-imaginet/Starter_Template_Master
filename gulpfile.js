@@ -29,8 +29,8 @@ const cleanUpDirs = ['./downloads/', './starter-template', './wordpress/wp-conte
 const assetsBase = './wordpress/wp-content/themes/starter-template/assets';
 const templateDir = './wordpress/wp-content/themes/starter-template';
 const cssHeader = `/*
-	Theme Name: Starter Template
-	Version: 1.1
+	Theme Name: Imaginet Starter Template
+	Version: 2.01
 	Author: Imaginet Studio
 */`;
 const jqueryPath = `./${assetsBase}/jquery/jquery.min.js`;
