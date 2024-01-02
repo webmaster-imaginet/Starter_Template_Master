@@ -1,6 +1,6 @@
 {
 	"name": "starter-template",
-	"version": "1.0.0",
+	"version": "2.0.1",
 	"description": "This is a Wordpress blank starter theme that works with gulp. ## Installation ### Required * Install last stable version of [node.js](https://nodejs.org/en/). * Install [npm](http://blog.npmjs.org/post/85484771375/how-to-install-npm).   * open node.js command prompt (Run as administration) - it will open \"c:\\Windows\\System32>\"     and Run the command:        * on windows - `npm install npm -g`        * on Mac - `sudo npm install npm -g` * Install [Gulp](http://gulpjs.com/) globally in your system.  Assuming Node.js is installed, open the command line tool, and run the command: `npm install -g gulp`.",
 	"main": "gulpfile.js",
 	"browserslist": [
@@ -14,14 +14,14 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/eli-imaginet/starter_template.git"
+		"url": "git+https://github.com/webmaster-imaginet/starter_template.git"
 	},
 	"author": "",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/eli-imaginet/starter_template/issues"
+		"url": "https://github.com/webmaster-imaginet/starter_template/issues"
 	},
-	"homepage": "https://github.com/eli-imaginet/starter_template#readme",
+	"homepage": "https://github.com/webmaster-imaginet/starter_template#readme",
 	"devDependencies": {
 		"colors": "^1.4.0",
 		"gulp": "^4.0.2",
