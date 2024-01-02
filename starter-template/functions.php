@@ -25,8 +25,6 @@ define('GOOGLE_API_KEY', 'SOME_KEY');
  ****************************************/
 get_template_part("includes/enqueue");
 get_template_part("includes/types-and-taxonomies");
-// get_template_part("functions/tgm");
-// get_template_part("functions/shortcodes");
 // get_template_part("functions/ajax");
 
 /*****************************************
@@ -73,13 +71,7 @@ if (function_exists('register_sidebar')) {
         ));
     }
 }
-// Add Theme Stylesheet To ADMIN
-add_action('admin_enqueue_scripts', 'qs_admin_theme_styles');
-function qs_admin_theme_styles()
-{
-    wp_register_style('admin-style', THEME . '/admin/admin-style.css', array(), NULL, 'all');
-    wp_enqueue_style('admin-style');
-}
+
 // Add body classes
 if (!function_exists('add_body_class')) {
     function add_body_class($classes)
@@ -109,10 +101,10 @@ if (!function_exists('add_body_class')) {
     add_filter('body_class', 'add_body_class');
 }
 // woocommerce activation snippet
-// function mytheme_add_woocommerce_support() {
+// function imaginet_add_woocommerce_support() {
 //   add_theme_support( 'woocommerce' );
 // }
-// add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
+// add_action( 'after_setup_theme', 'imaginet_add_woocommerce_support' );
 // initialize ACF Google Maps API
 function my_acf_init()
 {
@@ -287,14 +279,7 @@ function mycustom_flamingo_map_meta_cap($caps, $cap, $user_id, $args)
     return $caps;
 }
 
-function upload_svg_files($allowed)
-{
-    if (!current_user_can('manage_options'))
-        return $allowed;
-    $allowed['svg'] = 'image/svg+xml';
-    return $allowed;
-}
-add_filter('upload_mimes', 'upload_svg_files');
+
 function isCurrentPage($pageSlug, $menuItem)
 {
     $target = $menuItem->post_name;
