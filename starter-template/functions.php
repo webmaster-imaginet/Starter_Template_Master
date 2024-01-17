@@ -25,7 +25,8 @@ define('GOOGLE_API_KEY', 'SOME_KEY');
  ****************************************/
 get_template_part("includes/enqueue");
 get_template_part("includes/types-and-taxonomies");
-//get_template_part("includes/woocommerce-functions");
+// uncomment line below to activate woocommerce 
+// get_template_part("includes/woocommerce-functions");
 // get_template_part("functions/ajax");
 
 /*****************************************
@@ -101,11 +102,7 @@ if (!function_exists('add_body_class')) {
     }
     add_filter('body_class', 'add_body_class');
 }
-// woocommerce activation snippet
-// function imaginet_add_woocommerce_support() {
-//   add_theme_support( 'woocommerce' );
-// }
-// add_action( 'after_setup_theme', 'imaginet_add_woocommerce_support' );
+
 // initialize ACF Google Maps API
 function my_acf_init()
 {
@@ -176,7 +173,10 @@ function my_mce4_options($init)
     return $init;
 }
 add_filter('tiny_mce_before_init', 'my_mce4_options');
-/***************************************** no hebrew files  ********/
+
+
+//***************** no hebrew files  ***************/
+
 add_filter('wp_handle_upload_prefilter', 'hebrew_files_prevent');
 function hebrew_files_prevent($file)
 {
