@@ -25,6 +25,7 @@ define('GOOGLE_API_KEY', 'SOME_KEY');
  ****************************************/
 get_template_part("includes/enqueue");
 get_template_part("includes/types-and-taxonomies");
+//get_template_part("includes/woocommerce-functions");
 // get_template_part("functions/ajax");
 
 /*****************************************
