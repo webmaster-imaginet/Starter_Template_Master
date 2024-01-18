@@ -6,14 +6,14 @@
 /* Defaults
 -------------------------------------------------------------- */
 html {
-    font-size: 16px;
+    font-size: 10px;
 }
 
 body {
     color: $text-color;
-    font-size: 1rem;
+    font-size: 2rem;
     direction: ltr;
-    line-height: 1rem;
+    line-height: 1.5;
     font-weight: 400;
     font-family: $main-font-family;
         &.has-overflow{
@@ -30,24 +30,23 @@ h6 {
     position: relative;
     display: block;
     font-family: $main-font-family;
-    font-weight: 300;
-    line-height: 1.5em;
+    line-height: 1.2;
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 5rem;
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 4rem;
 }
 
 h3 {
-    font-size: 1.25rem;
+    font-size: 3rem;
 }
 
 h4 {
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 div,
@@ -123,8 +122,8 @@ img.grayscale:hover {
 .content ul {
     margin-left: 10px;
     padding-left: 10px;
-    font-size: 1rem;
-    line-height: 1.4em;
+    font-size: 2rem;
+    line-height: 1.5;
     margin-bottom: 8px;
 }
 
@@ -133,9 +132,9 @@ img.grayscale:hover {
 }
 
 .content p {
-    font-size: 1rem;
-    line-height: 1.2em;
-    margin-bottom: 0.6rem;
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
 }
 
 /****************************************************************
@@ -161,22 +160,13 @@ img.grayscale:hover {
     justify-content: space-between;
 }
 header{
-    position: fixed;
-    left: 0;
-    right: 0;
-    background-color: #fff;
-    z-index: 5555555;
-    box-shadow: 0 -3px 15px rgba(0, 0, 0, 0.5);
+    
 }
 
 /** Main Menu */
 ul#main-menu {
     position: relative;
     display: flex;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     flex-direction: row;
     list-style: none;
 }
@@ -188,9 +178,9 @@ ul#main-menu>li {
 ul#main-menu>li>a {
     position: relative;
     display: block;
-    font-size: 1rem;
+    font-size: 2rem;
     color: $primary-color;
-    line-height: 1.667rem;
+    line-height: 2;
     padding: 5px 10px;
 }
 
@@ -227,16 +217,8 @@ ul#main-menu ul.sub-menu li {
 ul#main-menu ul.sub-menu li a {
     position: relative;
     display: flex;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     align-items: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
     justify-content: space-between;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: space-between;
     padding: 10px;
     color: $primary-color;
     margin-right: 2px;
@@ -261,7 +243,7 @@ ul#main-menu ul.sub-menu li:hover>a {
     text-align: center;
 }
 .white{
-    .color: #fff;
+    color: #fff;
 }
 .full-absolute{
     position: absolute;
