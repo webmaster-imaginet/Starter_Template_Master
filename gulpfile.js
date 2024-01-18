@@ -25,9 +25,9 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const zip = require('zip-lib');
 const wpUrl = 'https://wordpress.org/latest.zip';
-const cleanUpDirs = ['./downloads/', './starter-template', './wordpress/wp-content/themes/twenty*'];
-const assetsBase = './wordpress/wp-content/themes/starter-template/assets';
-const templateDir = './wordpress/wp-content/themes/starter-template';
+const cleanUpDirs = ['./downloads/', './imaginet', './wordpress/wp-content/themes/twenty*'];
+const assetsBase = './wordpress/wp-content/themes/imaginet/assets';
+const templateDir = './wordpress/wp-content/themes/imaginet';
 const cssHeader = `/*
 	Theme Name: Imaginet Starter Template
 	Version: 2.01
@@ -53,8 +53,8 @@ const ftpconfig = {
 	pasvTimeout: 10000,
 	keepalive: 10000,
 	watch: [
-		'public_html/wp-content/themes/starter-template/assets/scss/*.css',
-		'public_html/wp-content/themes/starter-template/assets/scss/*.scss'
+		'public_html/wp-content/themes/imaginet/assets/scss/*.css',
+		'public_html/wp-content/themes/imaginet/assets/scss/*.scss'
 	],
 	watchTimeout: 500
 };
@@ -79,7 +79,7 @@ const sftpConfig = {
 };
 
 const themeCoreFiles = ['gulpfile.js', 'package-lock.json', 'package.json'];
-const templateAfterGenerationLocation = './wp-content/themes/starter-template';
+const templateAfterGenerationLocation = './wp-content/themes/imaginet';
 
 function notify(notifyObject) {
 	const {
@@ -189,8 +189,8 @@ function cleanGarbage(cb) {
 
 function setStarterTemplateInWpContent(cb) {
 	gulp
-		.src('./starter-template/**')
-		.pipe(gulp.dest('./wordpress/wp-content/themes/starter-template'))
+		.src('./imaginet/**')
+		.pipe(gulp.dest('./wordpress/wp-content/themes/imaginet'))
 		.on('finish', cb);
 }
 
