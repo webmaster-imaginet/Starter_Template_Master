@@ -30,6 +30,15 @@ get_template_part("includes/types-and-taxonomies");
 // get_template_part("functions/ajax");
 
 /*****************************************
+ **  Ajax
+ ****************************************/
+
+add_action( 'wp_enqueue_scripts', 'add_frontend_ajax_javascript_file' );
+function add_frontend_ajax_javascript_file() {
+    wp_enqueue_script( 'ajax_custom_script', THEME . '/assets/js/ajax-functions.js', array('jquery') );
+    wp_localize_script( 'ajax_custom_script', 'ajaxurl', admin_url( 'admin-ajax.php' ));
+}
+/*****************************************
  **  Theme Support
  *****************************************/
 if (function_exists('add_theme_support')) {
