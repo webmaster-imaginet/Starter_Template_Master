@@ -27,7 +27,7 @@ get_template_part("includes/enqueue");
 get_template_part("includes/types-and-taxonomies");
 // uncomment line below to activate woocommerce 
 // get_template_part("includes/woocommerce-functions");
-// get_template_part("functions/ajax");
+get_template_part("includes/ajax-functions");
 
 /*****************************************
  **  Ajax
